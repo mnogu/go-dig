@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestStringDig(t *testing.T) {
+func TestStringKey(t *testing.T) {
 	var jsonBlob = []byte(`{"foo": {"bar": {"baz": 1}}}`)
 	var v interface{}
 	if err := json.Unmarshal(jsonBlob, &v); err != nil {
@@ -22,7 +22,7 @@ func TestStringDig(t *testing.T) {
 	assert.NotNil(t, err)
 }
 
-func TestIntDig(t *testing.T) {
+func TestIntKey(t *testing.T) {
 	var jsonBlob = []byte(`{"foo": [10, 11, 12]}`)
 	var v interface{}
 	if err := json.Unmarshal(jsonBlob, &v); err != nil {
