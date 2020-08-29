@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// Dig extracts the nested value specified by the keys from m
 func Dig(m interface{}, keys ...interface{}) (interface{}, error) {
 	n := len(keys)
 	for i, key := range keys {
