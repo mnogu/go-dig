@@ -4,34 +4,34 @@ import (
 	"fmt"
 )
 
-// Dig extracts the nested value specified by the keys from m
-func Dig(m interface{}, keys ...interface{}) (interface{}, error) {
+// Dig extracts the nested value specified by the keys from v
+func Dig(v interface{}, keys ...interface{}) (interface{}, error) {
 	n := len(keys)
 	for i, key := range keys {
 		stringKey, ok := key.(string)
 		if ok {
-			raw, ok := m.(map[string]interface{})
+			raw, ok := v.(map[string]interface{})
 			if !ok {
-				return nil, fmt.Errorf("%v isn't a map", m)
+				return nil, fmt.Errorf("%v isn't a map", v)
 			}
-			m, ok = raw[stringKey]
+			v, ok = raw[stringKey]
 			if !ok {
-				return nil, fmt.Errorf("key %v not found in %v", stringKey, m)
+				return nil, fmt.Errorf("key %v not found in %v", stringKey, v)
 			}
 			if i == n-1 {
-				return m, nil
+				return v, nil
 			}
 			continue
 		}
 		intKey, ok := key.(int)
 		if ok {
-			raw, ok := m.([]interface{})
+			raw, ok := v.([]interface{})
 			if !ok {
-				return nil, fmt.Errorf("%v isn't a slice", m)
+				return nil, fmt.Errorf("%v isn't a slice", v)
 			}
-			m = raw[intKey]
+			v = raw[intKey]
 			if i == n-1 {
-				return m, nil
+				return v, nil
 			}
 			continue
 		}
