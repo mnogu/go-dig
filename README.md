@@ -1,6 +1,7 @@
 # go-dig
 
-[![GoDev](https://img.shields.io/static/v1?label=godev&message=reference&color=00add8)](https://pkg.go.dev/mod/github.com/mnogu/go-dig)
+[![PkgGoDev](https://pkg.go.dev/badge/mod/github.com/mnogu/go-dig)](https://pkg.go.dev/mod/github.com/mnogu/go-dig)
+[![GitHub Actions](https://github.com/mnogu/go-dig/workflows/Go/badge.svg)](https://github.com/mnogu/go-dig/actions?query=workflow%3AGo)
 
 Go version of [`Hash#dig`](https://docs.ruby-lang.org/en/2.7.0/Hash.html#method-i-dig) in Ruby
 
