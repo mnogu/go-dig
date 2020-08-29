@@ -1,6 +1,6 @@
 # go-dig
 
-Go version of `Hash#dig` in Ruby
+Go version of [`Hash#dig`](https://docs.ruby-lang.org/en/2.7.0/Hash.html#method-i-dig) in Ruby
 
 ## Download and Install
 
