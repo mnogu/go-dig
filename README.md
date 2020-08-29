@@ -1,5 +1,7 @@
 # go-dig
 
+[![GoDev](https://img.shields.io/static/v1?label=godev&message=reference&color=00add8)](https://pkg.go.dev/mod/github.com/mnogu/go-dig)
+
 Go version of [`Hash#dig`](https://docs.ruby-lang.org/en/2.7.0/Hash.html#method-i-dig) in Ruby
 
 ## Download and Install
