@@ -37,5 +37,5 @@ func Dig(v interface{}, keys ...interface{}) (interface{}, error) {
 		}
 		return nil, fmt.Errorf("unsupported key type: %v", key)
 	}
-	return nil, fmt.Errorf("something is wrong")
+	return nil, fmt.Errorf("no key is given")
 }
