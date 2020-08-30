@@ -29,6 +29,9 @@ func Dig(v interface{}, keys ...interface{}) (interface{}, error) {
 			if !ok {
 				return nil, fmt.Errorf("%v isn't a slice", v)
 			}
+			if intKey < 0 || intKey >= len(raw) {
+				return nil, fmt.Errorf("index out of range [%v]: %v", intKey, raw)
+			}
 			v = raw[intKey]
 			if i == n-1 {
 				return v, nil

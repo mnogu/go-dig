@@ -39,4 +39,12 @@ func TestIntKey(t *testing.T) {
 	failure2, err := Dig(v, "foo", "bar")
 	assert.Nil(t, failure2)
 	assert.NotNil(t, err)
+
+	failure3, err := Dig(v, "foo", -1)
+	assert.Nil(t, failure3)
+	assert.NotNil(t, err)
+
+	failure4, err := Dig(v, "foo", 3)
+	assert.Nil(t, failure4)
+	assert.NotNil(t, err)
 }
