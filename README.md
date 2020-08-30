@@ -3,7 +3,7 @@
 [![PkgGoDev](https://pkg.go.dev/badge/mod/github.com/mnogu/go-dig)](https://pkg.go.dev/mod/github.com/mnogu/go-dig)
 [![GitHub Actions](https://github.com/mnogu/go-dig/workflows/Go/badge.svg)](https://github.com/mnogu/go-dig/actions?query=workflow%3AGo)
 
-Go version of [`Hash#dig`](https://docs.ruby-lang.org/en/2.7.0/Hash.html#method-i-dig) in Ruby
+Go version of [`Hash#dig`](https://docs.ruby-lang.org/en/2.7.0/Hash.html#method-i-dig) and [`Array#dig`](https://docs.ruby-lang.org/en/2.7.0/Array.html#method-i-dig) in Ruby
 
 ## Download and Install
 
